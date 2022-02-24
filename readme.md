@@ -1,6 +1,6 @@
 # Purpose of this repo
 
-Although I did build a simple [fetch-weather website](https://eloquent-darwin-c9b4aa.netlify.app/) (using [this api](https://weatherstack.com/)) by following [this youtube tutorial](https://youtu.be/m2Dr4L_Ab14), _the main aim of this repo was to learn how to hide api keys with netlify functions_. Mission success!
+Although I did build a simple [fetch-weather website](https://hide-api-key.netlify.app/) (using [this api](https://weatherstack.com/)) by following [this youtube tutorial](https://youtu.be/m2Dr4L_Ab14), _the main aim of this repo was to learn how to hide api keys with netlify functions_. Mission success!
 
 # Dependencies
 
@@ -37,7 +37,7 @@ node_modules/
   - Create a .env file and store the api secret like this `API_SECRET=probablyABunchOfNumbersAndLetters`
   - In fetch-weather.js, provide `process.env.API_SECRET` to the axios call
 - Create a simple frontend so that users can play with your deployed site by entering a location and getting back weather data!
-- Deploy the site with Netlify!  The default settings will work, but at one point, don't forget to click 'advanced' so that you can enter the environment variable!
+- Deploy the site with Netlify! The default settings will work, but at one point, don't forget to click 'advanced' so that you can enter the environment variable!
 
 # Lessons learned
 
@@ -45,6 +45,7 @@ node_modules/
 - I must _remember to restart my netlify server_ via `netlify dev` whenever I make certain changes to my code, like switching out the hard coded api secret for `process.env.API_SECRET`
 
 # Accomplishments
+
 - clean code
   - I like how my frontend javascript is broken down into many functions, each with their own clear purpose. This makes the code very easy to read.
 
@@ -56,5 +57,6 @@ node_modules/
 - I'm glad I finally learned how to hide api keys....this was long overdue!
 
 # Next steps
+
 - move to javascript and css into separate files
 - learn how to use Netlify to deploy full-stack projects
